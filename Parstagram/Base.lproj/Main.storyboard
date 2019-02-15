@@ -93,26 +93,89 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="kLy-4i-wa2"/>
                     </view>
-                    <navigationItem key="navigationItem" id="2Al-dt-8Sh"/>
+                    <navigationItem key="navigationItem" id="2Al-dt-8Sh">
+                        <barButtonItem key="rightBarButtonItem" title="camera" id="0dV-em-2aa">
+                            <connections>
+                                <segue destination="enR-os-M1X" kind="presentation" id="hY7-cl-qwd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BJS-Z3-Qtn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1976.8" y="127.28635682158921"/>
         </scene>
-        <!--View Controller-->
+        <!--Camera View Controller-->
         <scene sceneID="2gx-rp-eIr">
             <objects>
-                <viewController id="enR-os-M1X" sceneMemberID="viewController">
+                <viewController id="enR-os-M1X" customClass="CameraViewController" customModule="Parstagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SnS-KA-eBj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ns5-lO-VA9">
+                                <rect key="frame" x="16" y="43" width="343" height="308"/>
+                                <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="308" id="JuZ-sj-QI9"/>
+                                    <constraint firstAttribute="width" constant="343" id="RG8-0T-SqS"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="dx3-u1-dr2" appends="YES" id="CCE-2h-TRV"/>
+                                </connections>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eRU-r3-0G6">
+                                <rect key="frame" x="16" y="359" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="oFT-JT-0eO"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="77R-du-L8p">
+                                <rect key="frame" x="16" y="397" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="Ueh-vt-pC2"/>
+                                    <constraint firstAttribute="height" constant="30" id="kFJ-KO-Z0E"/>
+                                </constraints>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="onSubmit:" destination="enR-os-M1X" eventType="touchUpInside" id="9QU-Fi-xI7"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="77R-du-L8p" firstAttribute="leading" secondItem="Acf-7Y-Fec" secondAttribute="leading" constant="16" id="1Q8-Xw-4Lk"/>
+                            <constraint firstItem="77R-du-L8p" firstAttribute="top" secondItem="eRU-r3-0G6" secondAttribute="bottom" constant="8" id="4ZY-z0-9h6"/>
+                            <constraint firstItem="Ns5-lO-VA9" firstAttribute="leading" secondItem="Acf-7Y-Fec" secondAttribute="leading" constant="16" id="6db-0L-i97"/>
+                            <constraint firstItem="Ns5-lO-VA9" firstAttribute="top" secondItem="Acf-7Y-Fec" secondAttribute="top" constant="23" id="CFI-M8-Jm5"/>
+                            <constraint firstItem="Acf-7Y-Fec" firstAttribute="trailing" secondItem="eRU-r3-0G6" secondAttribute="trailing" constant="16" id="DMd-sO-bQX"/>
+                            <constraint firstItem="eRU-r3-0G6" firstAttribute="top" secondItem="Ns5-lO-VA9" secondAttribute="bottom" constant="8" id="KQT-Wt-iBC"/>
+                            <constraint firstItem="Acf-7Y-Fec" firstAttribute="bottom" secondItem="77R-du-L8p" secondAttribute="bottom" constant="240" id="OuU-It-Lfx"/>
+                            <constraint firstItem="eRU-r3-0G6" firstAttribute="top" secondItem="Ns5-lO-VA9" secondAttribute="bottom" constant="8" id="Tj6-m3-u6k"/>
+                            <constraint firstItem="eRU-r3-0G6" firstAttribute="leading" secondItem="Acf-7Y-Fec" secondAttribute="leading" constant="16" id="VkW-gI-3lC"/>
+                            <constraint firstItem="Acf-7Y-Fec" firstAttribute="trailing" secondItem="77R-du-L8p" secondAttribute="trailing" constant="16" id="Yrr-0u-DNB"/>
+                            <constraint firstItem="77R-du-L8p" firstAttribute="top" secondItem="eRU-r3-0G6" secondAttribute="bottom" constant="8" id="dss-1X-TbJ"/>
+                            <constraint firstItem="Acf-7Y-Fec" firstAttribute="trailing" secondItem="Ns5-lO-VA9" secondAttribute="trailing" constant="16" id="kWT-PN-xel"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Acf-7Y-Fec"/>
                     </view>
+                    <connections>
+                        <outlet property="commentField" destination="eRU-r3-0G6" id="pKs-Qz-MDs"/>
+                        <outlet property="imageView" destination="Ns5-lO-VA9" id="Zuk-xZ-Qvv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VCe-0K-US8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="dx3-u1-dr2">
+                    <connections>
+                        <action selector="onCameraButton:" destination="enR-os-M1X" id="ZCW-vG-K1b"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="3033" y="128"/>
+            <point key="canvasLocation" x="3032.8000000000002" y="127.28635682158921"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="uXl-qO-39e">
