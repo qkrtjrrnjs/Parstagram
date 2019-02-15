@@ -23,4 +23,4 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://i.imgur.com/QLy1Qt8.gif' title='tipcal' width='' alt='tipcal' />
+<img src='https://i.imgur.com/9R35vSx.gif' title='tipcal' width='' alt='tipcal' />
