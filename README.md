@@ -23,4 +23,5 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://i.imgur.com/9R35vSx.gif' title='parstagram' width='' alt='parstagram' />
+![Sample Gif](https://i.imgur.com/9R35vSx.gif)
+	<img src="/art/sample.gif?raw=true" width="200px">
