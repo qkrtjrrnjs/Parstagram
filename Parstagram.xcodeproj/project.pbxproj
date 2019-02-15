@@ -13,8 +13,8 @@
 		834C178F2216700C002E0D99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834C178D2216700C002E0D99 /* LaunchScreen.storyboard */; };
 		834C179A2216700C002E0D99 /* ParstagramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834C17992216700C002E0D99 /* ParstagramTests.swift */; };
 		834C17A52216700C002E0D99 /* ParstagramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834C17A42216700C002E0D99 /* ParstagramUITests.swift */; };
-		834C17B422167042002E0D99 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834C17B222167042002E0D99 /* LoginViewController.swift */; };
 		834C17B62216704D002E0D99 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834C17B52216704D002E0D99 /* FeedViewController.swift */; };
+		834C17B8221671FA002E0D99 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834C17B7221671FA002E0D99 /* LoginViewController.swift */; };
 		ADB0558ABF862553F91B8733 /* Pods_Parstagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C95BB1300DED279C1AFEA6A1 /* Pods_Parstagram.framework */; };
 		CA89BFA9C19D0544077AEAEC /* Pods_ParstagramTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 856F2FAA6DCD7EB53A8E24BC /* Pods_ParstagramTests.framework */; };
 		D86063A339D7A5546CA48745 /* Pods_ParstagramUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97BF48FA1CB57A23530D2C6A /* Pods_ParstagramUITests.framework */; };
@@ -53,8 +53,8 @@
 		834C17A02216700C002E0D99 /* ParstagramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParstagramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		834C17A42216700C002E0D99 /* ParstagramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParstagramUITests.swift; sourceTree = "<group>"; };
 		834C17A62216700C002E0D99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		834C17B322167042002E0D99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Base; path = Base.lproj/LoginViewController.swift; sourceTree = "<group>"; };
 		834C17B52216704D002E0D99 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		834C17B7221671FA002E0D99 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		856F2FAA6DCD7EB53A8E24BC /* Pods_ParstagramTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParstagramTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		97BF48FA1CB57A23530D2C6A /* Pods_ParstagramUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParstagramUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A418AB951A2CB427B33B18A3 /* Pods-Parstagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parstagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Parstagram/Pods-Parstagram.release.xcconfig"; sourceTree = "<group>"; };
@@ -140,7 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				834C17842216700B002E0D99 /* AppDelegate.swift */,
-				834C17B222167042002E0D99 /* LoginViewController.swift */,
+				834C17B7221671FA002E0D99 /* LoginViewController.swift */,
 				834C17B52216704D002E0D99 /* FeedViewController.swift */,
 				834C17882216700B002E0D99 /* Main.storyboard */,
 				834C178B2216700C002E0D99 /* Assets.xcassets */,
@@ -400,7 +400,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				834C17B422167042002E0D99 /* LoginViewController.swift in Sources */,
+				834C17B8221671FA002E0D99 /* LoginViewController.swift in Sources */,
 				834C17B62216704D002E0D99 /* FeedViewController.swift in Sources */,
 				834C17852216700B002E0D99 /* AppDelegate.swift in Sources */,
 			);
@@ -452,14 +452,6 @@
 				834C178E2216700C002E0D99 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		834C17B222167042002E0D99 /* LoginViewController.swift */ = {
-			isa = PBXVariantGroup;
-			children = (
-				834C17B322167042002E0D99 /* Base */,
-			);
-			name = LoginViewController.swift;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
